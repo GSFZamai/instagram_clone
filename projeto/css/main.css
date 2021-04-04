@@ -98,3 +98,50 @@ body {
     width: 100%;
     padding: 1.3rem 0;
 }
+
+.download-app {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.app-download {
+    width: 10em;
+    height: 3em;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url("../imgs/apple-button.png");
+}
+
+.app-download:nth-child(2) {
+    background-image: url("../imgs/googleplay-button.png");
+}
+
+/*media queries*/
+
+@media (max-width: 1024px) {
+    .wrapper-instagram {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: white;
+    }
+
+    .phone-container {
+        display: none;
+    }
+
+    .continue-container {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
